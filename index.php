@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
+		<title>Sarto Savoie</title>
+		<link type="text/css" rel="stylesheet" href="style1.css">
+	</head>
+
+	<body>
+		<header>
+			<!-- contenu -->
+			<nav>
+				<!-- contenu -->
+			</nav>
+		</header>
+		
+		<!-- contenu -->
+		
+		<footer>
+			Site de location du Sarto pour cure thermale<br/>
+			Hébergé par Raspberry Pi 3 Model B<br/>
+			&copy; 2017 Nicolas VERHELST <a href="mailto:nico.v.44@gmail.com">nico.v.44@gmail.com</a><br/>
+			Nombre de visites : 
+			<?php
+				//=================================================================
+				//nombre de visite
+				$filename = 'nbrVisites.txt';
+				$nombreDeVisites = null;
+				//on recupère le nombre de visite dans le fichier
+				if (is_readable($filename)) {
+					if (!$handle = fopen($filename, 'r')) {//ouverture en mode lecture
+						 echo "Impossible d'ouvrir le fichier ($filename)";
+						 exit;
+					}
+					if (($nombreDeVisites = fread($handle, 100)) === FALSE) {//on lit jusqu'à 100 caractères
+						echo "Impossible de lire le fichier ($filename)";
+						exit;
+					}
+					fclose($handle);
+				} else {
+					echo "Le fichier $filename n'est pas accessible en lecture ou est introuvable.";
+				}
+				//on affiche le nombre de visites
+				if($nombreDeVisites) {echo $nombreDeVisites;}
+				//on incrémente le nombre de visite récupéré dans le fichier
+				if($nombreDeVisites != null) {$nombreDeVisites++;}
+				//on écrit ce nouveau nombre dans le fichier
+				if (is_writable($filename)) {
+					if (!$handle = fopen($filename, 'w')) {//ouverture en mode écriture
+						 echo "Impossible d'ouvrir le fichier ($filename)";
+						 exit;
+					}
+					if (fwrite($handle, $nombreDeVisites) === FALSE) {//on écrit le nouveau nombre par dessus l'encien
+						echo "Impossible d'écrire dans le fichier ($filename)";
+						exit;
+					}
+					fclose($handle);
+				} else {
+					echo "Le fichier $filename n'est pas accessible en écriture ou est introuvable.";
+				}
+				
+				
+				//=================================================================
+				//log du visiteur
+				$filename = 'log.txt';
+				$ipAddress = isset($_SERVER['REMOTE_ADDR'])?$_SERVER['REMOTE_ADDR']:"NO REMOTE_ADDR";
+				$browser = isset($_SERVER['HTTP_USER_AGENT'])?$_SERVER['HTTP_USER_AGENT']:"NO HTTP_USER_AGENT";
+				$referer = isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:"NO HTTP_REFERER";
+				$somecontent = "" . date('Y-m-d-H:i:s', time()) . ">" . time() . ">" . $ipAddress . ">" . $browser . ">" . $referer . "<\n";
+				//ATTENTION : le < est utilisé pour compter le nombre de visite (ne pas le retirer).
+				// Assurons nous que le fichier est accessible en écriture
+				if (is_writable($filename)) {
+					// Dans notre exemple, nous ouvrons le fichier $filename en mode d'ajout
+					// Le pointeur de fichier est placé à la fin du fichier
+					// c'est là que $somecontent sera placé
+					if (!$handle = fopen($filename, 'a')) {
+						 echo "Impossible d'ouvrir le fichier ($filename)";
+						 exit;
+					}
+					// Ecrivons quelque chose dans notre fichier.
+					if (fwrite($handle, $somecontent) === FALSE) {
+						echo "Impossible d'écrire dans le fichier ($filename)";
+						exit;
+					}
+					fclose($handle);
+
+				} else {
+					echo "Le fichier $filename n'est pas accessible en écriture.";
+				}
+			?>
+		</footer>
+		
+		<script src="JS1.js"></script>
+	</body>
+</html> 
