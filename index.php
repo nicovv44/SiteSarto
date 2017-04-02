@@ -7,15 +7,33 @@
 	</head>
 
 	<body>
-		<header>
-			<!-- contenu -->
-			<nav>
-				<!-- contenu -->
-			</nav>
+		<header id="TitreIndex">
+			<h1>Maisonnette de vigne</h1>
+			<div>
+				<h2>Cure thermale</h2>
+				<h2>Vacances</h2>
+			</div>
 		</header>
 		
-		<!-- contenu -->
+		<div class="blocAccueil">
+			<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/SartoExt1.jpg" alt=""/></a>
+		</div>
 		
+		<nav>
+			<h1>Menu</h1>
+			<ul>
+				<li><a href="index.php">Accueil</a></li>
+				<li><a href="photosExt.html">Photos extérieures</a></li>
+				<li><a href="photosInt.html">Photos intérieures</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="calendrienResa.html">Calendrier des réservations</a></li>
+				<li><a href="tarifs.html">Tarifs</a></li>
+				<li><a href="activiteProxi.html">Activités à proximité</a></li>
+				<li><a href="infoCompl.html">Informations compplémentaires</a></li>
+				<li><a href="contact.html">Contacts et coordonnées</a></li>
+			</ul>
+		</nav>
+			
 		<footer>
 			Site de location du Sarto pour cure thermale<br/>
 			Hébergé par Raspberry Pi 3 Model B<br/>

@@ -1,6 +1,5 @@
 body{
 	background-image: url("images/backgroundImage1.jpg");
-	//font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -8,19 +7,62 @@ body{
 
 /*=========================================================================================*/
 /*header*/
-header{
-	//
+.TitreNonIndex{
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+	color: white;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 500px;
+	height: 120px;
+	background-color: #3d7acc;/*Couleur figaro*/
+	text-align: center;
 }
 
+header h1{
+	padding-top: 20px;
+}
 
+#TitreIndex{
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+	color: white;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 500px;
+	height: 170px;
+	background-color: #3d7acc;/*Couleur figaro*/
+	text-align: center;
+}
 
 
 /*=========================================================================================*/
 /*nav*/
 nav{
-	//
+	width: 250px;
+	background-color: white;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin-right: 20px;
+	margin-top: 20px;
 }
 
+nav h1{
+	padding-left: 20px;
+	padding-top: 10px;
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+nav ul{
+	margin-top: 0px;
+	padding-bottom: 10px;
+}
 
 
 
@@ -29,19 +71,48 @@ nav{
 /*liens hypertext*/
 a{
 	color: blue;
+	text-decoration: none;
 }
 
 a:hover{
-	color: red;
+	color: green;
+	text-decoration: underline;
 }
 
-
+a:visited{
+	color: #08088A;
+	text-decoration: none;
+}
+	
+	
+	
+/*=========================================================================================*/
+/*contenu*/
+.blocAccueil{
+	text-align: center;
+}
+#imgAccueil{
+	height: 320px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+.blocPhotos  img{
+	height: 120px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
 
 
 
 /*=========================================================================================*/
 /*footer*/
 footer{
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
 	background-color: #aaa;
 	margin-top: 20px;
 	font-style:italic;
