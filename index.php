@@ -26,7 +26,7 @@
 				<li><a href="photosExt.html">Photos extérieures</a></li>
 				<li><a href="photosInt.html">Photos intérieures</a></li>
 				<li><a href="video.html">Video</a></li>
-				<li><a href="calendrienResa.html">Calendrier des réservations</a></li>
+				<li><a href="calendrierResa.php">Calendrier des réservations</a></li>
 				<li><a href="tarifs.html">Tarifs</a></li>
 				<li><a href="activiteProxi.html">Activités à proximité</a></li>
 				<li><a href="infoCompl.html">Informations compplémentaires</a></li>

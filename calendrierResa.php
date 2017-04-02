@@ -10,11 +10,10 @@
 		<header class="TitreNonIndex">
 			<h1>Maisonnette de vigne</h1>
 			<div>
-				<h2>Photos de l'extérieur</h2>
+				<h2>Calendrier des réservations</h2>
 			</div>
 		</header>
 		
-		<!-- contenu -->
 		
 		<nav>
 			<h1>Menu</h1>
@@ -31,12 +30,55 @@
 			</ul>
 		</nav>
 		
-		<div class="blocPhotos">
-			<a href="images/montagne.jpg"><img src="images/montagne.jpg" alt=""/></a>
-			<a href="images/chemin.jpg"><img src="images/chemin.jpg" alt=""/></a>
-			<a href="images/SartoExt1.jpg"><img src="images/SartoExt1.jpg" alt=""/></a>
-		</div>
-			
+		<h2 id="toi">Tableau des réservations 2017</h2>
+		
+			<?php
+				$filename = 'calendrier2017.csv';
+				echo "<table>";
+				if (($handle = fopen($filename, "r")) !== FALSE) {
+					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+						$num = count($data);
+						echo "<tr>";
+						for ($c=0; $c < $num; $c++) {
+							if($data[$c] === '0'){
+								echo "<td style='background-color: green'>" . "Libre" . "<td/>";
+							}
+							else if($data[$c] === '1'){
+								echo "<td style='background-color: red'>" . "Pris" . "<td/>";
+							}
+							else if(!($data[$c] === ' ')){
+								echo "<td style='background-color: green'>" . $data[$c] . "<td/>";
+							}
+						}
+						echo "</tr>";
+					}
+					fclose($handle);
+				}
+				
+				echo "</table>";
+				echo "<style>
+					table{
+						border-collapse: collapse;
+						text-align: center;
+						margin: auto;
+						background-color: green;
+					}
+					tr{
+						border: 2px solid black;
+					}
+					
+					th{
+						border: 2px solid black;
+					}
+					
+					td{
+						border: 2px solid black;
+					}
+				</style>";
+			?>
+		
+		
+		
 		<footer>
 			Site de location du Sarto pour cure thermale<br/>
 			Hébergé par Raspberry Pi 3 Model B<br/>

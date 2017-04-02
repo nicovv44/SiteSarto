@@ -15,6 +15,7 @@ body{
 	right: 0; 
 	margin-left: auto; 
 	margin-right: auto; 
+	margin-bottom: 20px; 
 	width: 500px;
 	height: 120px;
 	background-color: #3d7acc;/*Couleur figaro*/
@@ -33,6 +34,7 @@ header h1{
 	right: 0; 
 	margin-left: auto; 
 	margin-right: auto; 
+	margin-bottom: 20px; 
 	width: 500px;
 	height: 170px;
 	background-color: #3d7acc;/*Couleur figaro*/
@@ -97,13 +99,56 @@ a:visited{
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
 }
+
+.blocPhotos{
+	margin-right: 270px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .blocPhotos  img{
 	height: 120px;
 	margin: 20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
 }
 
+.blocPhotos span{
+	position: absolute;
+}
+
+.unePhoto{
+	display: flex;
+	flex-direction: column;
+}
+
+.unePhoto div{
+	color: red;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.unePhoto .definition{
+	font-size: 70%;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	bottom: 20px;
+	padding: 2px;
+}
+
+.exposant{ 
+	font-size: .7em; 
+	line-height: .8em; 
+} 
+
+
+#toi{
+	text-align: center;
+}
 
 
 /*=========================================================================================*/
