@@ -42,7 +42,7 @@
 						echo "<tr>";
 						for ($c=0; $c < $num; $c++) {
 							if($data[$c] === '0'){
-								echo "<td style='background-color: green'>" . "Libre" . "<td/>";
+								echo "<td style='background-color: #01DFA5'>" . "Libre" . "<td/>";
 							}
 							else if($data[$c] === '1' && $c!=0){
 								echo "<td style='background-color: red'>" . "Pris" . "<td/>";
@@ -88,7 +88,7 @@
 						echo "<tr>";
 						for ($c=0; $c < $num; $c++) {
 							if($data[$c] === '0'){
-								echo "<td style='background-color: green'>" . "Libre" . "<td/>";
+								echo "<td style='background-color: #01DFA5'>" . "Libre" . "<td/>";
 							}
 							else if($data[$c] === '1' && $c!=0){
 								echo "<td style='background-color: red'>" . "Pris" . "<td/>";
