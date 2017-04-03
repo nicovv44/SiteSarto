@@ -43,7 +43,7 @@
 							if($data[$c] === '0'){
 								echo "<td style='background-color: green'>" . "Libre" . "<td/>";
 							}
-							else if($data[$c] === '1'){
+							else if($data[$c] === '1' && $c!=0){
 								echo "<td style='background-color: red'>" . "Pris" . "<td/>";
 							}
 							else if(!($data[$c] === ' ')){
@@ -61,7 +61,6 @@
 						border-collapse: collapse;
 						text-align: center;
 						margin: auto;
-						background-color: green;
 					}
 					tr{
 						border: 2px solid black;
