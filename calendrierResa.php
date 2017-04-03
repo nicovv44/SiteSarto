@@ -14,15 +14,13 @@
 			</div>
 		</header>
 		
-		
 		<nav>
-			<h1>Menu</h1>
 			<ul>
 				<li><a href="index.php">Accueil</a></li>
 				<li><a href="photosExt.html">Photos extérieures</a></li>
 				<li><a href="photosInt.html">Photos intérieures</a></li>
 				<li><a href="video.html">Video</a></li>
-				<li><a href="calendrierResa.php">Calendrier des réservations</a></li>
+				<li><a class="bontonNavSelected" href="calendrierResa.php">Calendrier des réservations</a></li>
 				<li><a href="tarifs.html">Tarifs</a></li>
 				<li><a href="activiteProxi.html">Activités à proximité</a></li>
 				<li><a href="infoCompl.html">Informations compplémentaires</a></li>
@@ -30,8 +28,10 @@
 			</ul>
 		</nav>
 		
-		<h2 class="titreTableauResa">Tableau des réservations 2017</h2>
 		
+		
+		<h2 class="titreTableauResa">Tableau des réservations 2017</h2>
+		<div class="tableauxResa">
 			<?php
 				$filename = 'calendrier2017.csv';
 				echo "<table>";
@@ -47,7 +47,7 @@
 								echo "<td style='background-color: red'>" . "Pris" . "<td/>";
 							}
 							else if(!($data[$c] === ' ')){
-								echo "<td style='background-color: green'>" . $data[$c] . "<td/>";
+								echo "<td style='background-color: rgb(101,147,254); font-weight: bold;'>" . $data[$c] . "<td/>";
 							}
 						}
 						echo "</tr>";
@@ -73,7 +73,7 @@
 					}
 				</style>";
 			?>
-		
+		</div>
 		
 		
 		<footer>

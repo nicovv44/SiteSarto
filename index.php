@@ -20,9 +20,8 @@
 		</div>
 		
 		<nav>
-			<h1>Menu</h1>
 			<ul>
-				<li><a href="index.php">Accueil</a></li>
+				<li><a class="bontonNavSelected" href="index.php">Accueil</a></li>
 				<li><a href="photosExt.html">Photos extérieures</a></li>
 				<li><a href="photosInt.html">Photos intérieures</a></li>
 				<li><a href="video.html">Video</a></li>
@@ -33,7 +32,7 @@
 				<li><a href="contact.html">Contacts et coordonnées</a></li>
 			</ul>
 		</nav>
-			
+		
 		<footer>
 			Site de location du Sarto pour cure thermale<br/>
 			Hébergé par Raspberry Pi 3 Model B<br/>
