@@ -30,7 +30,7 @@
 			</ul>
 		</nav>
 		
-		<h2 id="toi">Tableau des réservations 2017</h2>
+		<h2 class="titreTableauResa">Tableau des réservations 2017</h2>
 		
 			<?php
 				$filename = 'calendrier2017.csv';
@@ -54,8 +54,8 @@
 					}
 					fclose($handle);
 				}
-				
 				echo "</table>";
+				
 				echo "<style>
 					table{
 						border-collapse: collapse;
@@ -65,11 +65,9 @@
 					tr{
 						border: 2px solid black;
 					}
-					
 					th{
 						border: 2px solid black;
 					}
-					
 					td{
 						border: 2px solid black;
 					}

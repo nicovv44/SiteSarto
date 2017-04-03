@@ -143,12 +143,28 @@ a:visited{
 .exposant{ 
 	font-size: .7em; 
 	line-height: .8em; 
-} 
+}
 
 
-#toi{
+.titreTableauResa{
 	text-align: center;
 }
+
+.blocInfo{
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	margin: auto;
+	width: 400px;
+}
+
+div.video{
+	text-align: center;
+}
+
 
 
 /*=========================================================================================*/
