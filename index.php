@@ -36,7 +36,7 @@
 		<footer>
 			Site de location du Sarto pour cure thermale<br/>
 			Hébergé par Raspberry Pi 3 Model B<br/>
-			&copy; 2017 Nicolas VERHELST <a href="mailto:nico.v.44@gmail.com">nico.v.44@gmail.com</a><br/>
+			&copy; 2017 Webmaster : Nicolas VERHELST <a href="mailto:nico.v.44@gmail.com">nico.v.44@gmail.com</a><br/>
 			Nombre de visites : 
 			<?php
 				//=================================================================

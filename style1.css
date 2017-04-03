@@ -121,7 +121,8 @@ a:visited{
 	margin-right: 176px;
 	margin-bottom: 0px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;/*Pour que les photos passent àa la ligne*/
+	justify-content: center;/*Pour que les photos soient centrées dans le blocPhotos*/
 }
 
 .blocPhotos  img{
@@ -166,6 +167,12 @@ a:visited{
 
 .titreTableauResa{
 	text-align: center;
+	margin-bottom: 2px;
+}
+
+.titreTableauResa span{
+	background-color: white;
+	padding: 3px;
 }
 
 .blocInfo{
