@@ -32,7 +32,7 @@
 		
 		
 		<div class="tableauxResa">
-			<h2 class="titreTableauResa"><span>Tableau des réservations 2017</span></h2>
+			<h2 class="titreTableauResa"><span>Réservations 2017</span></h2>
 			<?php
 				$filename = 'calendrier2017.csv';
 				if (($handle = fopen($filename, "r")) !== FALSE) {
@@ -78,7 +78,7 @@
 				</style>";
 			?>
 			
-			<h2 class="titreTableauResa"><span>Tableau des réservations 2018</span></h2>
+			<h2 class="titreTableauResa"><span>Réservations 2018</span></h2>
 			<?php
 				$filename = 'calendrier2018.csv';
 				if (($handle = fopen($filename, "r")) !== FALSE) {

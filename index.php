@@ -8,7 +8,7 @@
 
 	<body>
 		<header id="TitreIndex">
-			<h1>Maisonnette de vigne</h1>
+			<h1>Location maisonnette de vigne</h1>
 			<div>
 				<h2>Cure thermale</h2>
 				<h2>Vacances</h2>
