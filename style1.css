@@ -2,7 +2,20 @@ body{
 	background-image: url("images/backgroundImage1.jpg");
 }
 
+/*=========================================================================================*/
+/*modificateurs de text (span)*/
+.exposant{ 
+	font-size: .7em; 
+	line-height: .8em; 
+}
 
+.bold1{
+	font-weight: bold;
+}
+
+.petitText{
+	font-size: 75%;
+}
 
 
 /*=========================================================================================*/
@@ -106,7 +119,7 @@ a:visited{
 	
 	
 /*=========================================================================================*/
-/*contenu*/
+/*accueil : index*/
 .blocAccueil{
 	text-align: center;
 }
@@ -117,6 +130,10 @@ a:visited{
 	box-shadow: 6px 6px 6px black;
 }
 
+
+
+/*=========================================================================================*/
+/*les photos*/
 .blocPhotos{
 	margin-right: 176px;
 	margin-bottom: 0px;
@@ -159,12 +176,11 @@ a:visited{
 	padding: 2px;
 }
 
-.exposant{ 
-	font-size: .7em; 
-	line-height: .8em; 
-}
 
 
+
+/*=========================================================================================*/
+/*tableaux de réservation*/
 .titreTableauResa{
 	text-align: center;
 	margin-bottom: 2px;
@@ -175,39 +191,46 @@ a:visited{
 	padding: 3px;
 }
 
+.tableauxResa{
+	margin-bottom: 55px;
+}
+
+
+
+/*=========================================================================================*/
+/*blocs d'information*/
 .blocInfo{
 	background-color: white;
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 20px;
 	margin: auto;
 	width: 400px;
 }
 
-div.video{
-	text-align: center;
+.blocInfo>:not(hr){/*Pour décoller tous les élements sauf <hr/>*/
+	padding-left: 20px;
 }
 
-.tableauxResa{
-	margin-bottom: 55px;
-}
-
-.bold1{
-	font-weight: bold;
-}
-
-.petitText{
-	font-size: 75%;
+.blocInfo>ul{/*Pour décoller les points des ul*/
+	padding-left: 40px;
 }
 
 
 
 /*=========================================================================================*/
+/*vidéo*/
+div.video{
+	text-align: center;
+}
+
+
+
+
+
+/*=========================================================================================*/
 /*footer*/
-
-
 footer{
 	background-color: #aaa;
 	font-style:italic;
