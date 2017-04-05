@@ -122,7 +122,9 @@ a:visited{
 /*accueil : index*/
 .blocAccueil{
 	text-align: center;
+	margin-bottom: 70px;/*Pour que le footer ne recouvre pas le bloc si on défile vers le bas*/
 }
+
 #imgAccueil{
 	height: 320px;
 	margin: 20px;
@@ -138,7 +140,7 @@ a:visited{
 	margin-right: 176px;
 	margin-bottom: 0px;
 	display: flex;
-	flex-wrap: wrap;/*Pour que les photos passent àa la ligne*/
+	flex-wrap: wrap;/*Pour que les photos passent à la ligne*/
 	justify-content: center;/*Pour que les photos soient centrées dans le blocPhotos*/
 }
 
@@ -192,7 +194,7 @@ a:visited{
 }
 
 .tableauxResa{
-	margin-bottom: 55px;
+	margin-bottom: 55px;/*Pour que le footer ne recouvre pas le tableau*/
 }
 
 
@@ -232,13 +234,14 @@ div.video{
 /*=========================================================================================*/
 /*footer*/
 footer{
-	background-color: #aaa;
+	background-color: #aaa;/*Du gris*/
 	font-style:italic;
 	font-size: small;
-	text-align: center;
-	width: 100%;
-	position: fixed;
-	bottom: 0px;
+	text-align: center;/*Pour centrer le text*/
+	width: 100%;/*Pour avoir toute la largeur de la page*/
+	position: fixed;/*Pour le fixer sur l'écran*/
+	bottom: 0px;/*Pour coller le footer en bas*/
+	left: 0px;/*Pour coller le footer à gauche*/
 }
 
 
