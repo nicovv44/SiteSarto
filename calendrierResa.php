@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
-		<title>Calendrier réservation</title>
+		<title>Maisonnette - Calendrier réservation</title>
 		<link type="text/css" rel="stylesheet" href="style1.css">
 		<meta name="description" content="Calendrier de réservation pour location de la maisonnette de Savoie" />
 	</head>
