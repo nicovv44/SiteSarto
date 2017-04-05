@@ -17,7 +17,7 @@
 		</header>
 		
 		<div class="blocAccueil">
-			<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/SartoExt1.jpg" alt=""/></a>
+			<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/thumb.SartoExt1.index.jpg" alt=""/></a>
 		</div>
 		
 		<nav>
