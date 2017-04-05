@@ -15,24 +15,27 @@
 				<h2>Vacances</h2>
 			</div>
 		</header>
-		
-		<div class="blocAccueil">
-			<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/SartoExt1.jpg" alt=""/></a>
-		</div>
-		
+
 		<nav>
 			<ul>
 				<li><a class="bontonNavSelected" href="index.php">Accueil</a></li>
 				<li><a href="photosExt.html">Photos extérieures</a></li>
 				<li><a href="photosInt.html">Photos intérieures</a></li>
 				<li><a href="video.html">Vidéo</a></li>
-				<li><a href="calendrierResa.php">Calendrier des réservations</a></li>
+				<li><a href="calendrierResa.php">Réservations</a></li>
 				<li><a href="tarifs.html">Tarifs</a></li>
 				<li><a href="activiteProxi.html">Activités à proximité</a></li>
-				<li><a href="infoCompl.html">Informations compplémentaires</a></li>
-				<li><a href="contact.html">Contacts et coordonnées</a></li>
+				<li><a href="infoCompl.html">Informations</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
+		
+		
+		<div class="blocAccueil">
+			<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/SartoExt1.jpg" alt=""/></a>
+		</div>
+		
+		
 		
 		<footer>
 			Site de location maisonnette pour cure thermale<br/>
