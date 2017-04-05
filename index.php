@@ -31,10 +31,11 @@
 		</nav>
 		
 		
-		<div class="blocAccueil">
-			<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/SartoExt1.jpg" alt=""/></a>
+		<div class="inPage">
+			<div class="blocAccueil">
+				<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/SartoExt1.jpg" alt=""/></a>
+			</div>
 		</div>
-		
 		
 		
 		<footer>
