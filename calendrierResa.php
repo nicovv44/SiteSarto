@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
-		<title>Sarto Savoie</title>
+		<title>Calendrier réservation</title>
 		<link type="text/css" rel="stylesheet" href="style1.css">
 	</head>
 
