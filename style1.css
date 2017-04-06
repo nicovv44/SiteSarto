@@ -133,24 +133,24 @@ a:visited{
 	
 /*=========================================================================================*/
 /*accueil : index*/
-.blocAccueil{
+#blocAccueil{
 	display: flex;
-	flex-direction: row;
-}
-
-#ImageIndex{
-	left: 0; 
-	right: 0; 
-	margin-left: auto; 
-	margin-right: auto; 
-	text-align: center;
-	margin-bottom: 70px;/*Pour que le footer ne recouvre pas le bloc si on défile vers le bas*/
+	justify-content: space-around;
 }
 
 #imgAccueil{
-	height: 400px;
+	height: 300px;
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
+}
+
+#blocInfoAccueil{
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+	padding: 10px;
+	margin: 0px;
+	max-width: 400px;
 }
 
 

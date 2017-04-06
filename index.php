@@ -19,11 +19,18 @@
 			<div class="espacePourNav"></div>
 		</header>
 		
-		<div class="blocAccueil">
-			<div id="ImageIndex">
-				<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/thumb.SartoExt1.index.jpg" alt=""/></a>
+		<div class="inPage">
+			<div id="blocAccueil">
+				<div>
+					<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/thumb.SartoExt1.index.jpg" alt=""/></a>
+				</div>
+				<div id="blocInfoAccueil">
+					<h1>En bref</h1>
+					<p>Venez en Savoie, à proximité du lac du Bourget (le plus grand lac naturelle de France) pour faire une cure thermale, passer des vacances au ski, vous promener en montagne dans le fameux massif des bauges. Au pied du mont Revard, vous aurez une vue imprenable sur la vallée en contrebas.</p>
+					<p>Vous serez à 10 min en voiture du centre ville d'Aix les bains, à 15 min du lac, et à 20 min de Chambéry.</p>
+					<p>Un réseau de bus pourra lui aussi vous emmener là ou bon vous semble.</p>
+				</div>
 			</div>
-				<div class="espacePourNav"></div>
 		</div>
 		
 		<nav>
