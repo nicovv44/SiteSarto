@@ -20,6 +20,12 @@ body{
 
 /*=========================================================================================*/
 /*header*/
+.inPage{
+	margin-right: 176px;/*Pour laisser de la place au menu vertical*/
+}
+
+/*=========================================================================================*/
+/*header*/
 header{
 	display: flex;
 	flex-direction: row;
@@ -152,7 +158,6 @@ a:visited{
 /*=========================================================================================*/
 /*les photos*/
 .blocPhotos{
-	margin-right: 176px;
 	margin-bottom: 0px;
 	display: flex;
 	flex-wrap: wrap;/*Pour que les photos passent à la ligne*/
@@ -210,7 +215,6 @@ a:visited{
 
 .tableauxResa{
 	margin-bottom: 55px;/*Pour que le footer ne recouvre pas le tableau*/
-	margin-right: 176px;/*Pour laisser de la place au menu*/
 }
 
 

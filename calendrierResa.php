@@ -34,100 +34,96 @@
 		
 		
 		
-		
-		<div class="tableauxResa">
-			<h2 class="titreTableauResa"><span>Réservations 2017</span></h2>
-			<?php
-				$filename = 'calendrier2017.csv';
-				if (($handle = fopen($filename, "r")) !== FALSE) {
-					echo "<table>";
-					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-						$num = count($data);
-						echo "<tr>";
-						for ($c=0; $c < $num; $c++) {
-							if($data[$c] === '0'){
-								echo "<td style='background-color: #01DFA5'>" . "Libre" . "<td/>";
+		<div class="inPage">
+			<div class="tableauxResa">
+				<h2 class="titreTableauResa"><span>Réservations 2017</span></h2>
+				<?php
+					$filename = 'calendrier2017.csv';
+					if (($handle = fopen($filename, "r")) !== FALSE) {
+						echo "<table>";
+						while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+							$num = count($data);
+							echo "<tr>";
+							for ($c=0; $c < $num; $c++) {
+								if($data[$c] === '0'){
+									echo "<td style='background-color: #01DFA5'>" . "Libre" . "<td/>";
+								}
+								else if($data[$c] === '1' && $c!=0){
+									echo "<td style='background-color: red'>" . "Pris" . "<td/>";
+								}
+								else if(!($data[$c] === ' ')){
+									echo "<td style='background-color: rgb(101,147,254); font-weight: bold;'>" . $data[$c] . "<td/>";
+								}
 							}
-							else if($data[$c] === '1' && $c!=0){
-								echo "<td style='background-color: red'>" . "Pris" . "<td/>";
-							}
-							else if(!($data[$c] === ' ')){
-								echo "<td style='background-color: rgb(101,147,254); font-weight: bold;'>" . $data[$c] . "<td/>";
-							}
+							echo "</tr>";
 						}
-						echo "</tr>";
+						fclose($handle);
+						echo "</table>";
 					}
-					fclose($handle);
-					echo "</table>";
-				}
-				else {echo "<p style='color : red;'>Fichier $filename non  trouvé.</p>";}
-				
-				
-				
-				echo "<style>
-					table{
-						border-collapse: collapse;
-						text-align: center;
-						margin: auto;
-					}
-					tr{
-						border: 2px solid black;
-					}
-					th{
-						border: 2px solid black;
-					}
-					td{
-						border: 2px solid black;
-					}
-				</style>";
-			?>
-			
-			<h2 class="titreTableauResa"><span>Réservations 2018</span></h2>
-			<?php
-				$filename = 'calendrier2018.csv';
-				if (($handle = fopen($filename, "r")) !== FALSE) {
-					echo "<table>";
-					while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-						$num = count($data);
-						echo "<tr>";
-						for ($c=0; $c < $num; $c++) {
-							if($data[$c] === '0'){
-								echo "<td style='background-color: #01DFA5'>" . "Libre" . "<td/>";
-							}
-							else if($data[$c] === '1' && $c!=0){
-								echo "<td style='background-color: red'>" . "Pris" . "<td/>";
-							}
-							else if(!($data[$c] === ' ')){
-								echo "<td style='background-color: rgb(101,147,254); font-weight: bold;'>" . $data[$c] . "<td/>";
-							}
+					else {echo "<p style='color : red;'>Fichier $filename non  trouvé.</p>";}
+					
+					echo "<style>
+						table{
+							border-collapse: collapse;
+							text-align: center;
+							margin: auto;
 						}
-						echo "</tr>";
-					}
-					fclose($handle);
-					echo "</table>";
-				}
-				else {echo "<p style='color : red;'>Fichier $filename non  trouvé.</p>";}
+						tr{
+							border: 2px solid black;
+						}
+						th{
+							border: 2px solid black;
+						}
+						td{
+							border: 2px solid black;
+						}
+					</style>";
+				?>
 				
-				
-				
-				echo "<style>
-					table{
-						border-collapse: collapse;
-						text-align: center;
-						margin: auto;
+				<h2 class="titreTableauResa"><span>Réservations 2018</span></h2>
+				<?php
+					$filename = 'calendrier2018.csv';
+					if (($handle = fopen($filename, "r")) !== FALSE) {
+						echo "<table>";
+						while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+							$num = count($data);
+							echo "<tr>";
+							for ($c=0; $c < $num; $c++) {
+								if($data[$c] === '0'){
+									echo "<td style='background-color: #01DFA5'>" . "Libre" . "<td/>";
+								}
+								else if($data[$c] === '1' && $c!=0){
+									echo "<td style='background-color: red'>" . "Pris" . "<td/>";
+								}
+								else if(!($data[$c] === ' ')){
+									echo "<td style='background-color: rgb(101,147,254); font-weight: bold;'>" . $data[$c] . "<td/>";
+								}
+							}
+							echo "</tr>";
+						}
+						fclose($handle);
+						echo "</table>";
 					}
-					tr{
-						border: 2px solid black;
-					}
-					th{
-						border: 2px solid black;
-					}
-					td{
-						border: 2px solid black;
-					}
-				</style>";
-			?>
-		
+					else {echo "<p style='color : red;'>Fichier $filename non  trouvé.</p>";}
+					
+					echo "<style>
+						table{
+							border-collapse: collapse;
+							text-align: center;
+							margin: auto;
+						}
+						tr{
+							border: 2px solid black;
+						}
+						th{
+							border: 2px solid black;
+						}
+						td{
+							border: 2px solid black;
+						}
+					</style>";
+				?>
+			</div>
 		</div>
 		
 		
