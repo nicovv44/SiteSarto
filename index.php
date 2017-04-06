@@ -4,7 +4,7 @@
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
 		<title>Location maisonnette Savoie</title>
 		<link type="text/css" rel="stylesheet" href="style1.css">
-		<meta name="description" content="Location d'une maisonnette en Savoie, à proximité du lac du bourget, pour cure thermale, vacances, ski, promenande en montagne." />
+		<meta name="description" content="Location vacances Savoie - Location d'une maisonnette en Savoie, à proximité du lac du bourget, pour cure thermale, vacances, ski, promenande en montagne." />
 	</head>
 
 	<body>
