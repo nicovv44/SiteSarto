@@ -195,6 +195,7 @@ a:visited{
 
 .tableauxResa{
 	margin-bottom: 55px;/*Pour que le footer ne recouvre pas le tableau*/
+	margin-right: 176px;/*Pour laisser de la place au menu*/
 }
 
 
