@@ -199,6 +199,31 @@ a:visited{
 }
 
 
+/*=========================================================================================*/
+/*affichage dynamic des images*/
+#large {
+	display: none;
+	background: #FFFFFF;    
+	padding: 5px;
+	z-index: 10;
+	color: #336699;
+    min-height: 200px;
+    min-width: 200px;
+}
+#large img{
+	height: 600px;/* de l'image agrandie*/
+}
+#background{
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #000;    
+	z-index: 1;
+}
+
 
 
 /*=========================================================================================*/
