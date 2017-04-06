@@ -8,11 +8,14 @@
 	</head>
 
 	<body>
-		<header class="TitreNonIndex">
-			<h1>Maisonnette de vigne</h1>
-			<div>
-				<h2>Calendrier des réservations</h2>
+		<header>
+			<div class="TitreNonIndex">
+				<h1>Maisonnette de vigne</h1>
+				<div>
+					<h2>Calendrier des réservations</h2>
+				</div>
 			</div>
+			<div class="espacePourNav"></div>
 		</header>
 		
 		<nav>

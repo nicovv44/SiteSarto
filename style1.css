@@ -20,6 +20,11 @@ body{
 
 /*=========================================================================================*/
 /*header*/
+header{
+	display: flex;
+	flex-direction: row;
+}
+
 .TitreNonIndex{
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
@@ -27,7 +32,7 @@ body{
 	left: 0; 
 	right: 0; 
 	margin-left: auto; 
-	margin-right: auto; 
+	margin-right: auto;
 	margin-bottom: 20px; 
 	width: 500px;
 	height: 120px;
@@ -35,9 +40,12 @@ body{
 	text-align: center;
 }
 
-header h1{
-	padding-top: 20px;
+.espacePourNav{/*Espace vide pour laisser de la place au menu*/
+	width: 176px;
+	background-color: red;
 }
+
+
 
 #TitreIndex{
 	border-radius: 10px;
@@ -121,13 +129,21 @@ a:visited{
 /*=========================================================================================*/
 /*accueil : index*/
 .blocAccueil{
+	display: flex;
+	flex-direction: row;
+}
+
+#ImageIndex{
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
 	text-align: center;
 	margin-bottom: 70px;/*Pour que le footer ne recouvre pas le bloc si on défile vers le bas*/
 }
 
 #imgAccueil{
 	height: 400px;
-	margin: 20px;
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
 }

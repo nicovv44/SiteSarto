@@ -8,16 +8,22 @@
 	</head>
 
 	<body>
-		<header id="TitreIndex">
-			<h1>Location maisonnette de vigne</h1>
-			<div>
-				<h2>Cure thermale</h2>
-				<h2>Vacances</h2>
+		<header>
+			<div id="TitreIndex">
+				<h1>Location maisonnette de vigne</h1>
+				<div>
+					<h2>Cure thermale</h2>
+					<h2>Vacances</h2>
+				</div>
 			</div>
+			<div class="espacePourNav"></div>
 		</header>
 		
 		<div class="blocAccueil">
-			<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/thumb.SartoExt1.index.jpg" alt=""/></a>
+			<div id="ImageIndex">
+				<a href="images/SartoExt1.jpg"><img id="imgAccueil" src="images/thumb.SartoExt1.index.jpg" alt=""/></a>
+			</div>
+				<div class="espacePourNav"></div>
 		</div>
 		
 		<nav>
